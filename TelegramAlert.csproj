@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x64</PlatformTarget>
+    <ApplicationIcon>ta.ico</ApplicationIcon>
+    
+    <!-- Версия 0.7.62 ночная сборка -->
+    <Version>0.7.62.0</Version>
+    <FileVersion>0.7.62.0</FileVersion>
+    <AssemblyVersion>0.7.62.0</AssemblyVersion>
+    <Product>Telegram Alert Monitor</Product>
+    <Description>Отправка уведомлений из Telegram в Meshtastic CC BY-NC 4.0</Description>
+    <Company>Quantum Croak Industries</Company>
+    <Copyright>🐸 2026 Quantum Croak CCBYNC4.0</Copyright>
+    <Title>TelegramAlert</Title>
+    <InformationalVersion>0.7.62-nightly.20260514</InformationalVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.CsWinRT" Version="2.0.4" />
+    <PackageReference Include="System.Speech" Version="8.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="MQTTnet" Version="4.3.7.1207" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Content Include="ta.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
